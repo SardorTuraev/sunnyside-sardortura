@@ -1,0 +1,104 @@
+ :root{
+     --color-white:#ffffff;
+     --color-blur-grey: #24303E;
+     --color-dark-green:#24554A;
+     --color-extra-dark-green:#3E7467;
+     --color-text-grey:#808397;
+     --color-extra-text-grey:#A7AAAD;
+     --color-dark-blue:#052C3B;
+     --color-extra-dark-blue:#19536C;
+     --color-yellow:#FBD600;
+
+     --main-transition:0.3s ease;
+     --font-francues-9pt:'Fraunces 9pt Soft', serif;
+     --font-barlow:'Barlow', Arial;
+ }
+
+@font-face {
+    font-family: 'Fraunces 9pt Soft';
+    src: url('/fonts/Fraunces9ptSoft-Black.woff2') format('woff2'),
+        url('/fonts/Fraunces9ptSoft-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Fraunces 72pt Soft';
+    src: url('/fonts/Fraunces72ptSoft-Black.woff2') format('woff2'),
+        url('/fonts/Fraunces72ptSoft-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Barlow';
+    src: url('/fonts/Barlow-SemiBold.woff2') format('woff2'),
+        url('/fonts/Barlow-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+html {
+    box-sizing: border-box;
+    height: 100%;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: var(--font-barlow),"Arial",sans-serif;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    font-size: 18px;
+line-height: 25px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+
+
+.container {
+  max-width: 1000px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.portfolio__list{
+    list-style: none;
+}
+
+
+
+
+
